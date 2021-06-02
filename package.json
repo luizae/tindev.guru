@@ -43,6 +43,7 @@
     "react-router-config": "^5.1.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.0.1",
+    "react-simple-snackbar": "^1.1.11",
     "uuid": "3.4.0",
     "validate.js": "^0.12.0"
   },

@@ -1,4 +1,5 @@
 import React from 'react';
+import SnackbarProvider from 'react-simple-snackbar';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { renderRoutes } from 'react-router-config';
@@ -11,7 +12,7 @@ const history = createBrowserHistory();
 const App = () => {
   return (
     <Router history={history}>
-      {renderRoutes(routes)}
+      <SnackbarProvider>{renderRoutes(routes)}</SnackbarProvider>
     </Router>
   );
 };
