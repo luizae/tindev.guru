@@ -4,6 +4,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Roboto;
+  font-size: 1rem;
 }
 
 html {
@@ -13,8 +15,10 @@ html {
 }
 
 body {
-  background-color: #f4f6f8;
+  background-color: #444;
   height: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 a {
@@ -23,4 +27,7 @@ a {
 
 #root {
   height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }

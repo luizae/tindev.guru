@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "text": "Me chama de funcional e me da um lambda"
+  },
+  {
+    "id": 2,
+    "text": "Me chama de react e vem ser meu componente"
+  },
+  {
+    "id": 3,
+    "text": "Me chama de redux e deixa eu controlar seu estado"
+  }
+]
