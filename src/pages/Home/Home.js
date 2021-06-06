@@ -45,7 +45,6 @@ const HomePage = () => {
           }}>
           clique aqui
         </span>
-        qantada
       </p>
       <p></p>
     </div>
