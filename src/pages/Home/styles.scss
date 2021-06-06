@@ -27,5 +27,15 @@
       background-color: #333;
       cursor: pointer;
     }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      font-weight: 600;
+
+      &:hover {
+        text-shadow: 1px 1px 1px #000;
+      }
+    }
   }
 }

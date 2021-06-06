@@ -57,7 +57,14 @@ const HomePage = () => {
           clique aqui
         </span>
       </p>
-      <p></p>
+      <p>
+        <a
+          href="https://github.com/luizae/tindev.guru"
+          target="_blank"
+          rel="noreferrer">
+          Contribua enviando sua qantada!
+        </a>
+      </p>
     </div>
   );
 };
