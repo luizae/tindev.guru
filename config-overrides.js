@@ -6,7 +6,7 @@ const cspConfigPolicy = {
   'base-uri': "'self'",
   'object-src': "'none'",
   'script-src': ["'self'"],
-  'style-src': ["'self'", "'unsafe-inline'"]
+  'style-src': ["'self'", "'unsafe-inline'", "'sha256-ofD561pbZp1IM+fYyqfHKdYkyF2oLv0h+L9l0UhbRBo='"]
 };
 
 function addCspHtmlWebpackPlugin(config) {
