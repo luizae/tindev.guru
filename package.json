@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "HOST=0.0.0.0 PORT=22000 react-scripts start",
-    "build": "INLINE_RUNTIME_CHUNK=false react-scripts build",
-    "test": "react-scripts test",
+    "start": "HOST=0.0.0.0 PORT=22000 react-app-rewired start",
+    "build": "INLINE_RUNTIME_CHUNK=false react-app-rewired build",
+    "test": "react-app-rewired test",
     "test:unit": "TZ=UTC NODE_TEST=unit-tests NODE_ENV=unit-tests ./node_modules/.bin/jest --useStderr --config jest.config.js --coverage",
-    "eject": "react-scripts eject"
+    "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,6 +48,8 @@
     "validate.js": "^0.12.0"
   },
   "devDependencies": {
+    "csp-html-webpack-plugin": "^5.1.0",
+    "customize-cra": "^1.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.6.0",
@@ -55,6 +57,7 @@
     "eslint-plugin-react": "^7.24.0",
     "prettier": "^1.17.1",
     "prettier-eslint": "^8.8.2",
-    "prettier-eslint-cli": "^4.7.1"
+    "prettier-eslint-cli": "^4.7.1",
+    "react-app-rewired": "^2.1.8"
   }
 }
