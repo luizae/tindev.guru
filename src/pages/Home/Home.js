@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { useSnackbar } from 'react-simple-snackbar';
 
 import './styles.scss';
@@ -23,14 +23,6 @@ const HomePage = () => {
   const [sentence, setSentence] = useState(getRandomSentence);
   const [openSnackbar] = useSnackbar();
 
-  useMemo(() => {
-    document.addEventListener('keyup', event => {
-      if (event.key === ' ') {
-        setSentence(getRandomSentence(sentence));
-      }
-    });
-  }, []);
-
   const handleCopySentence = () => {
     const el = document.createElement('textarea');
     el.value = sentence.text;
@@ -49,7 +41,7 @@ const HomePage = () => {
         {sentence.text}
       </h1>
       <p>
-        Pressione <span>SPACE</span> para alterar a qantada ou{' '}
+        Para alterar a qantada
         <span
           onClick={() => {
             setSentence(getRandomSentence(sentence));
@@ -57,6 +49,7 @@ const HomePage = () => {
           clique aqui
         </span>
       </p>
+      <p>Clique na qantada para copiar para a área de transferência</p>
       <p>
         <a
           href="https://github.com/luizae/tindev.guru"
