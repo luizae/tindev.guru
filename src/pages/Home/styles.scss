@@ -9,12 +9,13 @@
     font-size: 400%;
     max-width: 1000px;
     cursor: copy;
+    padding-bottom: 5rem;
   }
 
   p {
     font-style: italic;
     font-size: 120%;
-    padding: 1rem;
+    padding: 0.5rem;
     color: #999;
     user-select: none;
 
@@ -26,6 +27,7 @@
       border-radius: 3px;
       background-color: #333;
       cursor: pointer;
+      margin-left: 5px;
     }
 
     a {
