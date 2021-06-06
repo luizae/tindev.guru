@@ -4,8 +4,19 @@ import { useSnackbar } from 'react-simple-snackbar';
 import './styles.scss';
 import sentencesData from '../../data/sentences.json';
 
-const getRandomSentence = () => {
-  return sentencesData[Math.floor(Math.random() * sentencesData.length)];
+const getRandomSentence = actualSentence => {
+  const selectedSentence =
+    sentencesData[Math.floor(Math.random() * sentencesData.length)];
+
+  if (!actualSentence) {
+    return selectedSentence;
+  }
+
+  if (actualSentence.id === selectedSentence.id) {
+    return getRandomSentence(selectedSentence);
+  }
+
+  return selectedSentence;
 };
 
 const HomePage = () => {
@@ -15,7 +26,7 @@ const HomePage = () => {
   useMemo(() => {
     document.addEventListener('keyup', event => {
       if (event.key === ' ') {
-        setSentence(getRandomSentence());
+        setSentence(getRandomSentence(sentence));
       }
     });
   }, []);
@@ -41,7 +52,7 @@ const HomePage = () => {
         Pressione <span>SPACE</span> para alterar a qantada ou{' '}
         <span
           onClick={() => {
-            setSentence(getRandomSentence());
+            setSentence(getRandomSentence(sentence));
           }}>
           clique aqui
         </span>
