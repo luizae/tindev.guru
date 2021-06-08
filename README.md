@@ -6,7 +6,7 @@ Sim, qantadas é uma brincadeira com QA + Cantadas :P
 
 # Conheço uma boa Qantada e quero adicionar, #comofaz?
 
-Simples! Faça um fork do projeto e envie um Pull Request adicionando sua qantada ao arquivo [src/data/sentences.json](src/data/sentences.json)
+Simples! Faça um fork do projeto e envie um Pull Request adicionando sua qantada ao arquivo [src/data/sentences.js](src/data/sentences.js)
 
 # Rodando localmente
 
