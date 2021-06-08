@@ -9,4 +9,6 @@ export const sentences = [
   'Isso no seu bolso é um .rar? Porque eu quero descompactar',
   'Segue a autorização pra acessar minha cama quando quiser',
   'Gata, me passa tua foreign key pra gente fazer um inner join',
+  'Gata, se vc fizer um find eu vou ser seu único elemento',
+  'Eu quero ser o único estado do seu contexto, sua linda'
 ];
