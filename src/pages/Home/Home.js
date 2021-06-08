@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useSnackbar } from 'react-simple-snackbar';
 
 import './styles.scss';
@@ -20,8 +20,12 @@ const getRandomSentence = actualSentence => {
 };
 
 const HomePage = () => {
-  const [sentence, setSentence] = useState(getRandomSentence());
+  const [sentence, setSentence] = useState('');
   const [openSnackbar] = useSnackbar();
+
+  useMemo(() => {
+    setSentence(getRandomSentence());
+  }, [])
 
   const handleCopySentence = () => {
     const el = document.createElement('textarea');
@@ -38,7 +42,7 @@ const HomePage = () => {
       <h1
         onClick={() => handleCopySentence()}
         title="Clique para copiar para a área de transferência">
-        {sentence.text}
+        {sentence}
       </h1>
       <p>
         Para alterar a qantada
