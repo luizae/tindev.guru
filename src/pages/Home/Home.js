@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { useSnackbar } from 'react-simple-snackbar';
 
 import './styles.scss';
-import sentencesData from '../../data/sentences.json';
+import { sentences as sentencesData } from '../../data/sentences';
 
 const getRandomSentence = actualSentence => {
   const position = Math.floor(Math.random() * sentencesData.length);
