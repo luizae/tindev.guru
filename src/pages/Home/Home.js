@@ -5,7 +5,7 @@ import './styles.scss';
 import sentencesData from '../../data/sentences.json';
 
 const getRandomSentence = actualSentence => {
-  const position = Math.floor(Math.random() * sentencesData.length)
+  const position = Math.floor(Math.random() * sentencesData.length);
   const selectedSentence =
     sentencesData[position];
 
