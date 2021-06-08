@@ -61,5 +61,17 @@
     "prettier-eslint": "^8.8.2",
     "prettier-eslint-cli": "^5.0.1",
     "react-app-rewired": "^2.1.8"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "context",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect"
+    ]
   }
 }
