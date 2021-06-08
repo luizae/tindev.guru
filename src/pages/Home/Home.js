@@ -25,7 +25,7 @@ const HomePage = () => {
 
   useMemo(() => {
     setSentence(getRandomSentence());
-  }, [])
+  }, []);
 
   const handleCopySentence = () => {
     const el = document.createElement('textarea');
