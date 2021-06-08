@@ -11,4 +11,7 @@ export const sentences = [
   'Gata, me passa tua foreign key pra gente fazer um inner join',
   'Gata, se vc fizer um find eu vou ser seu único elemento',
   'Eu quero ser o único estado do seu contexto, sua linda',
+  'Você não é sinal de wifi, mas queria te pegar',
+  'Voce não é 4k, mas é em bonito de se ver',
+  'Me chama de aplicação e vem me debugar',
 ];
