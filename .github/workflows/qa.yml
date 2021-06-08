@@ -1,8 +1,6 @@
 name: Creates a docker image for production
 
 on: [pull_request]
-  push:
-    branches: [main]
 
 jobs:
   docker:
