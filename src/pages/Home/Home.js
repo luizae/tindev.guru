@@ -5,14 +5,15 @@ import './styles.scss';
 import sentencesData from '../../data/sentences.json';
 
 const getRandomSentence = actualSentence => {
+  const position = Math.floor(Math.random() * sentencesData.length)
   const selectedSentence =
-    sentencesData[Math.floor(Math.random() * sentencesData.length)];
+    sentencesData[position];
 
   if (!actualSentence) {
     return selectedSentence;
   }
 
-  if (actualSentence.id === selectedSentence.id) {
+  if (actualSentence === selectedSentence) {
     return getRandomSentence(selectedSentence);
   }
 
@@ -20,7 +21,7 @@ const getRandomSentence = actualSentence => {
 };
 
 const HomePage = () => {
-  const [sentence, setSentence] = useState(getRandomSentence);
+  const [sentence, setSentence] = useState(getRandomSentence());
   const [openSnackbar] = useSnackbar();
 
   const handleCopySentence = () => {
@@ -54,7 +55,7 @@ const HomePage = () => {
         <a
           href="https://github.com/luizae/tindev.guru"
           target="_blank"
-          rel="noreferrer">
+          rel="noopener noreferrer">
           Contribua enviando sua qantada!
         </a>
       </p>

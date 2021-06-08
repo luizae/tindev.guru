@@ -1,38 +1,11 @@
 [
-  {
-    "id": 1,
-    "text": "Me chama de funcional e me da um lambda"
-  },
-  {
-    "id": 2,
-    "text": "Me chama de react e vem ser meu componente"
-  },
-  {
-    "id": 3,
-    "text": "Me chama de redux e deixa eu controlar seu estado"
-  },
-  {
-    "id": 4,
-    "text": "Gata, você não é variavel mas é o meu tipo"
-  },
-  {
-    "id": 5,
-    "text": "O email: amord@minhavida.com.br está disponível"
-  },
-  {
-    "id": 6,
-    "text": "Sem condições, sua beleza é fora do alcance"
-  },
-  {
-    "id": 7,
-    "text": "Gata, você é NFT? Porque eu quero que você seja só minha"
-  },
-  {
-    "id": 8,
-    "text": "Isso no seu bolso é um .rar? Porque eu quero descompactar"
-  },
-  {
-    "id": 9,
-    "text": "Segue a autorização pra acessar minha cama quando quiser"
-  }
+  "Me chama de funcional e me da um lambda",
+  "Me chama de react e vem ser meu componente",
+  "Me chama de redux e deixa eu controlar seu estado",
+  "Gata, você não é variavel mas é o meu tipo",
+  "O email: amord@minhavida.com.br está disponível",
+  "Sem condições, sua beleza é fora do alcance",
+  "Gata, você é NFT? Porque eu quero que você seja só minha",
+  "Isso no seu bolso é um .rar? Porque eu quero descompactar",
+  "Segue a autorização pra acessar minha cama quando quiser"
 ]
