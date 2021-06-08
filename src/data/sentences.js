@@ -9,4 +9,12 @@ export const sentences = [
   'Isso no seu bolso é um .rar? Porque eu quero descompactar',
   'Segue a autorização pra acessar minha cama quando quiser',
   'Gata, me passa tua foreign key pra gente fazer um inner join',
+  'Nem a placa de vídeo mais potente pode renderizar toda a sua beleza',
+  '[me != me]. [me += you].',
+  'Você está sempre em C:/Meu/Coração',
+  'Você não é orientada a objetos mais é cheio de classe',
+  'Você não é CSS, mas é puro estilo',
+  'Você não é objeto, mas eu amei seus atributos',
+  'Você é puro overclocking',
+  'Se você fosse uma variável, seria um ponteiro que aponta para o endereço de memória do meu coração',
 ];
