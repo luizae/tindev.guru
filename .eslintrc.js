@@ -2,6 +2,7 @@ module.exports = {
   env: {
     es6: true,
     browser: true,
+    'jest/globals': true,
   },
   extends: ['eslint:recommended', 'plugin:react/recommended'],
   globals: {
@@ -15,7 +16,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react'],
+  plugins: ['react', 'jest'],
   rules: {
     indent: ['error', 2],
     'linebreak-style': ['error', 'unix'],
@@ -31,5 +32,10 @@ module.exports = {
         functions: 'always-multiline',
       },
     ],
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };

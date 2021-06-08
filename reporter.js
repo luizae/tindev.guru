@@ -1,17 +1,21 @@
-const fs = require('fs')
+const fs = require('fs');
 
 class MyCustomReporter {
   constructor(globalConfig, options) {
-    this._globalConfig = globalConfig
-    this._options = options
+    this._globalConfig = globalConfig;
+    this._options = options;
   }
 
   onRunComplete(contexts, results) {
-    fs.rename('./coverage/coverage-final.json', './coverage/coverage.raw.json', err => {
-      if (err) throw err
-      console.log('renamed complete')
-    })
+    fs.rename(
+      './coverage/coverage-final.json',
+      './coverage/coverage.raw.json',
+      err => {
+        if (err) throw err;
+        console.log('renamed complete');
+      },
+    );
   }
 }
 
-module.exports = MyCustomReporter
+module.exports = MyCustomReporter;
