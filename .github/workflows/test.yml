@@ -1,0 +1,17 @@
+name: Test and generate the docker image
+
+on: [pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Linting and testing with nodejs 14.17.0
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.17.0
+      - run: npm install
+      - run: npm run test:ci
+      - run: npm run build
+      - run: npm run build

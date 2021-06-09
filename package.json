@@ -6,8 +6,10 @@
   "scripts": {
     "start": "HOST=0.0.0.0 PORT=22000 react-app-rewired start",
     "build": "INLINE_RUNTIME_CHUNK=false react-app-rewired build",
+    "lint": "./node_modules/.bin/eslint ./src",
+    "lint:fix": "npm run lint -- --fix",
     "test": "react-app-rewired test",
-    "test:unit": "TZ=UTC NODE_TEST=unit-tests NODE_ENV=unit-tests ./node_modules/.bin/jest --useStderr --config jest.config.js --coverage",
+    "test:ci": "TZ=UTC NODE_TEST=unit-tests NODE_ENV=unit-tests ./node_modules/.bin/jest --useStderr --config jest.config.js --coverage",
     "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
@@ -55,9 +57,21 @@
     "eslint": "^7.28.0",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.24.0",
-    "prettier": "^1.17.1",
+    "prettier": "^1.19.1",
     "prettier-eslint": "^8.8.2",
     "prettier-eslint-cli": "^5.0.1",
     "react-app-rewired": "^2.1.8"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "context",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect"
+    ]
   }
 }
